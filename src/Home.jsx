@@ -207,7 +207,7 @@ const Home = () => {
           <div className="relative">
             <div className="block text-black transition duration-500 ease-in-out transform hover:shadow-lg hover:-translate-y-2 text-center">
               <img
-                className="h-[413px] w-[375px] opacity-50 "
+                className="h-[413px] w-[375px] max-w-full opacity-50 "
                 src={Hills}
                 alt=""
               />
@@ -243,7 +243,7 @@ const Home = () => {
           <div className="relative">
             <div className="block text-black transition duration-500 ease-in-out transform hover:shadow-lg hover:-translate-y-2 text-center">
               <img
-                className="h-[413px] w-[375px] opacity-50 "
+                className="h-[413px] w-[375px] max-w-full opacity-50 "
                 src={Traveler}
                 alt="travel-pic"
               />
