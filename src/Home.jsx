@@ -20,6 +20,7 @@ import thoughtworks from "./assets/thoughtworks.png";
 import TUV from "./assets/TUV.png";
 import cripumps from "./assets/CRIPUMPS.png";
 import FooterImg from "./assets/footer.jpg";
+import Socialmedia from "./assets/socialmedia.png";
 
 const Home = () => {
   const [isOpen1, setIsOpen1] = useState(false);
@@ -205,7 +206,11 @@ const Home = () => {
           </div>
           <div className="relative">
             <div className="block text-black transition duration-500 ease-in-out transform hover:shadow-lg hover:-translate-y-2 text-center">
-              <img className="h-[413px] w-[375px] max-w-full opacity-50 " src={Hills} alt="" />
+              <img
+                className="h-[413px] w-[375px] max-w-full opacity-50 "
+                src={Hills}
+                alt=""
+              />
               <div className="absolute top-0 p-6">
                 <div className="flex items-center justify-center mb-3">
                   <div className="p-4 bg-white rounded-full ">
@@ -304,8 +309,8 @@ const Home = () => {
       </div>
       <div className="md:relative">
         <img className="h-auto max-w-full" src={Coach} alt="van-pic" />
-        <div className="md:absolute md:bottom-24 md:left-0 w-full">
-          <div className="md:grid md:grid-cols-2 gap-10">
+        <div className="md:absolute md:bottom-20 md:left-0 w-full flex items-end justify-end md:pr-10">
+          <div className="flex flex-col max-w-xl">
             <div className="m-4 p-4 bg-gradient-to-br from-yellow-400 to-yellow-800 rounded-r-xl rounded-b-xl ">
               <h5>Rental Cars</h5>
               <p>
@@ -353,8 +358,8 @@ const Home = () => {
 
       {/* vehicles */}
 
-      <div>
-        <h1 className="text-4xl font-thin text-center">
+      <div className="mt-12">
+        <h1 className="md:text-4xl text-xl font-thin text-center">
           Available Vehicles At{" "}
           <span className="font-normal">Manoj Travels</span>
         </h1>
@@ -372,29 +377,33 @@ const Home = () => {
             Luxury 15 Seaters
           </button>
         </div>
-        <div className="grid grid-cols-2">
-          <img className="" src={swift} alt="" />
-          <div>
-            <h1 className="text-4xl font-semibold text-center">SWIFT</h1>
-            <p className="text-center">
-              Compact, efficient, and ready for every road ahead. With its
-              modern design and reliable performance, the Swift is the ultimate
-              travel companion. Experience comfort, style, and agility like
-              never before. Rent yours today with Manoj Tours & Travels.
-            </p>
+      </div>
+      {/* swift */}
+      <div className="flex items-center justify-center space-x-5 md:p-0 p-4">
+        <div className="">
+          <div className="max-w-md">
+            <img className="" src={swift} alt="" />
           </div>
+        </div>
+        <div className="max-w-lg">
+          <h1 className="text-4xl font-semibold text-center mb-4">SWIFT</h1>
+          <p className="text-center">
+            Compact, efficient, and ready for every road ahead. With its modern
+            design and reliable performance, the Swift is the ultimate travel
+            companion. Experience comfort, style, and agility like never before.
+            Rent yours today with Manoj Tours & Travels.
+          </p>
         </div>
       </div>
 
-      <div className="mt-12 mb-12">
-        <h1 className="text-4xl font-thin text-center">
-          BOOK TEMPO TRAVELLER IN{" "}
-          <span className="font-normal">COIMBATORE</span>
-        </h1>
-        <h1 className="text-4xl font-thin text-center">
-          with
-          <span className="font-normal"> manoj tours and travels</span>
-        </h1>
+      <div className="md:mt-12 md:mb-12">
+        <div className="md:text-4xl text-xl p-4">
+          <h1 className=" font-thin text-center">
+            BOOK TEMPO TRAVELLER IN{" "}
+            <span className="font-normal">COIMBATORE</span> with
+            <span className="font-normal"> manoj tours and travels</span>
+          </h1>
+        </div>
         <div className="md:grid md:grid-cols-4 mt-7">
           <div className="relative m-4 rounded-lg">
             <div className="block text-white transition duration-500 ease-in-out transform hover:shadow-lg hover:-translate-y-2 ">
@@ -405,11 +414,11 @@ const Home = () => {
               />
               <div className="absolute bottom-0 p-6">
                 <div className="space-y-4">
-                  <h4 className=" text-xl font-semibold">UI/UX designer</h4>
+                  <h4 className=" text-xl font-semibold">Ooty</h4>
                   <p>
-                    As a UI/UX designer, my goal is to deliver immersive and
-                    engaging experiences that leave a lasting impact on users
-                    while meeting the unique needs of each project.
+                    Discover the tranquil beauty of Ooty's lush tea gardens and
+                    mist-covered Nilgiri hills. Immerse yourself in its charming
+                    colonial architecture and serene lakeside vistas.
                   </p>
                 </div>
               </div>
@@ -424,11 +433,11 @@ const Home = () => {
               />
               <div className="absolute bottom-0 p-6">
                 <div className="space-y-4">
-                  <h4 className=" text-xl font-semibold">UI/UX designer</h4>
+                  <h4 className=" text-xl font-semibold">Kanchepuram</h4>
                   <p>
-                    As a UI/UX designer, my goal is to deliver immersive and
-                    engaging experiences that leave a lasting impact on users
-                    while meeting the unique needs of each project.
+                    Known as the 'City of Thousand Temples', it's a treasure
+                    trove of ancient Dravidian architecture and renowned for its
+                    exquisite silk sarees.
                   </p>
                 </div>
               </div>
@@ -443,11 +452,12 @@ const Home = () => {
               />
               <div className="absolute bottom-0 p-6">
                 <div className="space-y-4">
-                  <h4 className=" text-xl font-semibold">UI/UX designer</h4>
+                  <h4 className=" text-xl font-semibold">Allapey</h4>
                   <p>
-                    As a UI/UX designer, my goal is to deliver immersive and
-                    engaging experiences that leave a lasting impact on users
-                    while meeting the unique needs of each project.
+                    Often called the "Venice of the East," is renowned for its
+                    intricate network of backwaters and serene houseboat
+                    cruises. Its lush greenery and tranquil waters make it a
+                    captivating destination for nature lover
                   </p>
                 </div>
               </div>
@@ -462,11 +472,12 @@ const Home = () => {
               />
               <div className="absolute bottom-0 p-6">
                 <div className="space-y-4">
-                  <h4 className=" text-xl font-semibold">UI/UX designer</h4>
+                  <h4 className=" text-xl font-semibold">Coimbatore</h4>
                   <p>
-                    As a UI/UX designer, my goal is to deliver immersive and
-                    engaging experiences that leave a lasting impact on users
-                    while meeting the unique needs of each project.
+                    Discover Coimbatore's vibrant markets, serene temples, and
+                    lush greenery, making it a perfect blend of urban charm and
+                    natural beauty. Explore its culinary delights and vibrant
+                    culture.
                   </p>
                 </div>
               </div>
@@ -476,12 +487,12 @@ const Home = () => {
       </div>
 
       {/* feedback */}
-      <div className="">
-        <h1 className="text-4xl font-thin text-center">
+      <div className="text-slate-800">
+        <h1 className="md:text-4xl  text-xl font-thin text-center">
           What People <span className="font-normal">Say?</span>
         </h1>
-        <div className="grid grid-cols-3 gap-4 m-10">
-          <div className="flex flex-col items-center p-4 w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
+        <div className="md:grid md:grid-cols-3 md:gap-4 m-10 space-y-3">
+          <div className="flex flex-col items-center p-4 w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-lg ">
             <img
               className="w-24 h-24 mb-3 rounded-full shadow-lg "
               src={David}
@@ -543,7 +554,7 @@ const Home = () => {
               </svg>
             </div>
           </div>
-          <div className="flex flex-col items-center p-4 w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
+          <div className="flex flex-col items-center p-4 w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-lg ">
             <img
               className="w-24 h-24 mb-3 rounded-full shadow-lg "
               src={Prince}
@@ -605,7 +616,7 @@ const Home = () => {
               </svg>
             </div>
           </div>
-          <div className="flex flex-col items-center p-4 w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
+          <div className="flex flex-col items-center p-4 w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-lg ">
             <img
               className="w-24 h-24 mb-3 rounded-full shadow-lg "
               src={Streve}
@@ -673,10 +684,10 @@ const Home = () => {
       {/* clients */}
       <div className="md:grid md:grid-cols-2 md:gap-4 mt-12 mb-12">
         <div className="p-7">
-          <h1 className="text-4xl font-thin text-center pb-7">
+          <h1 className="md:text-4xl text-2xl font-thin text-center pb-7">
             Our <span className="font-normal">Clients</span>
           </h1>
-          <p className="text-center text-xl">
+          <p className="text-center text-xl text-slate-600">
             Streamline your corporate travel with Manoj Tours & Travels. From
             executive transportation to group outings, we've got you covered.
             Experience seamless service and unmatched convenience for your
@@ -687,24 +698,24 @@ const Home = () => {
           <table className="table table-bordered">
             <tbody className="text-center">
               <tr>
-                <td className="py-6 px-10 border border-gray-400">
+                <td className="md:py-6 md:px-10 p-2 border border-gray-400">
                   <img src={indialand} alt="indialand-image" />
                 </td>
-                <td className="py-6 px-10 border border-gray-400">
+                <td className="md:py-6 md:px-10 p-2 border border-gray-400">
                   <img src={mmodal} alt="mmodal-image" />
                 </td>
-                <td className="py-6 px-10 border border-gray-400">
+                <td className="md:py-6 md:px-10 p-2 border border-gray-400">
                   <img src={kgisl} alt="kgisl-image" />
                 </td>
               </tr>
               <tr>
-                <td className="py-6 px-10 border border-gray-400">
+                <td className="md:py-6 md:px-10 p-2 border border-gray-400">
                   <img src={thoughtworks} alt="thoughtworks" />
                 </td>
-                <td className="py-6 px-10 border border-gray-400">
+                <td className="md:py-6 md:px-10 p-2 border border-gray-400">
                   <img src={TUV} alt="TUV" />
                 </td>
-                <td className="py-6 px-10 border border-gray-400">
+                <td className="md:py-6 md:px-10 p-2 border border-gray-400">
                   <img src={cripumps} alt="cripumps-image" />
                 </td>
               </tr>
@@ -714,8 +725,8 @@ const Home = () => {
       </div>
 
       {/* faq */}
-      <div className="p-7">
-        <h1 className="text-4xl font-normal text-center pb-7">
+      <div className="p-7 text-slate-800">
+        <h1 className="md:text-4xl text-xl font-normal text-center pb-7">
           Frequently <span className="font-thin">Asked Questions</span>
         </h1>
         <div className="flex flex-col space-y-6 justify-center md:ml-16 md:mr-16">
@@ -806,12 +817,12 @@ const Home = () => {
               <button
                 type="button"
                 className="flex items-center justify-between w-full p-5 font-medium rtl:text-right border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200"
-                onClick={toggleCollapse2}
-                aria-expanded={isOpen2 ? "true" : "false"}
+                onClick={toggleCollapse3}
+                aria-expanded={isOpen3 ? "true" : "false"}
               >
                 <span>On call hire service</span>
                 <svg
-                  className={`w-3 h-3 rotate-${isOpen2 ? "0" : "180"} shrink-0`}
+                  className={`w-3 h-3 rotate-${isOpen3 ? "0" : "180"} shrink-0`}
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -829,7 +840,7 @@ const Home = () => {
             </h2>
             <div
               className={`${
-                isOpen2 ? "" : "hidden"
+                isOpen3 ? "" : "hidden"
               } p-5 border border-b-0 border-gray-200 `}
             >
               <p className="mb-2">
@@ -847,12 +858,12 @@ const Home = () => {
               <button
                 type="button"
                 className="flex items-center justify-between w-full p-5 font-medium rtl:text-right border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200"
-                onClick={toggleCollapse2}
-                aria-expanded={isOpen2 ? "true" : "false"}
+                onClick={toggleCollapse4}
+                aria-expanded={isOpen4 ? "true" : "false"}
               >
                 <span>On call hire service</span>
                 <svg
-                  className={`w-3 h-3 rotate-${isOpen2 ? "0" : "180"} shrink-0`}
+                  className={`w-3 h-3 rotate-${isOpen4 ? "0" : "180"} shrink-0`}
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -870,7 +881,7 @@ const Home = () => {
             </h2>
             <div
               className={`${
-                isOpen2 ? "" : "hidden"
+                isOpen4 ? "" : "hidden"
               } p-5 border border-b-0 border-gray-200 `}
             >
               <p className="mb-2">
@@ -889,83 +900,77 @@ const Home = () => {
       {/* <!-- footer section --> */}
       <div className="md:relative">
         <img className="h-auto max-w-full" src={FooterImg} alt="van-pic" />
-        <div className="md:absolute md:bottom-24 md:left-0 w-full">
+        <div className="md:absolute md:top-0 md:left-0 w-full">
           <div className="row">
             <div className="mt-12 mb-12">
-              <h3 className="font-bold text-center text-white mt-5 text-4xl">
+              <h3 className="font-bold text-center md:text-white text-slate-800 mt-5 md:text-4xl text-xl p-4">
                 Customer care team will call you in few minutes
               </h3>
               <form className="footer-form">
                 <div className=" text-center">
                   <input
                     type="number"
-                    className="px-4 py-2 rounded-lg"
-                    placeholder="Enter your mobile number"
+                    className="px-6 py-4 rounded-lg bg-white shadow-2xl border border-slate-400"
+                    placeholder="Enter mobile number"
                   />
                 </div>
                 <div className=" mt-3 text-center">
                   <button
                     type="button"
-                    className="px-4 py-2 rounded-lg bg-blue-500 hover:bg-blue-600 text-white"
+                    className="px-6 py-4 rounded-lg bg-blue-500 hover:bg-blue-600 md:text-white text-slate-800"
                   >
                     Request call back
                   </button>
                 </div>
               </form>
-              <hr className="text-white mt-5" />
             </div>
-            <div className="grid grid-cols-5 gap-7">
-              <div className="col-md-3">
-                <div className="manoj-tours-address text-white">
-                  <h5 className="fw-bold">Manoj Tours & Travels</h5>
-                  <p>
-                    Kamaraja Road (Opp To) ALOFT HotelNear IOB Bank,Uppliplayam
-                    PostCoimbatore - 641015,TamilNadu
-                  </p>
-                  <p>+91 98650 89000</p>
-                  <p>info@manojtravels.in</p>
-                </div>
-              </div>
-              <div className="col-md-3">
-                <div className="tour-package text-white">
-                  <h6 className="fw-bold">TOUR PACKAGE</h6>
-                  <p>One day Package</p>
-                  <p>Two day Package</p>
-                  <p>Three day Package</p>
-                  <p>Four day Package</p>
-                  <p>Five day Package</p>
-                  <p>Six day Package</p>
-                  <p>Seven day Package</p>
-                  <p>Eight day Package</p>
-                  <p>Nine day Package</p>
-                  <p>Ten day Package</p>
-                </div>
-              </div>
-              <div className="col-md-3">
-                <div className="other-services text-white">
-                  <h6 className="fw-bold">OTHER SERVICES</h6>
-                  <p>Hire for Tour Package</p>
-                  <p>Hire for Outstation</p>
-                  <p>Hire for One Way Drop</p>
-                  <p>Hire for Round Trip</p>
-                  <p>Hire for Corporate Companies</p>
-                  <p>Hire for Airport Pickup & Drop</p>
-                  <p>Hire for Local</p>
-                  <p>Hire for Pilgrimage</p>
-                </div>
+            <hr className="md:text-white text-slate-800 mt-5" />
+            <div className="max-w-6xl mx-auto md:grid md:grid-cols-5 md:gap-7 md:mt-12 md:mb-12 p-5 md:space-y-0 space-y-5">
+              <div className=" md:text-white text-slate-800 space-y-2">
+                <h5 className="font-bold text-xl">Manoj Tours & Travels</h5>
+                <p>
+                  Kamaraja Road (Opp To) ALOFT HotelNear IOB Bank,Uppliplayam
+                  PostCoimbatore - 641015 TamilNadu
+                </p>
+                <p>+91 98650 89000</p>
+                <p>info@manojtravels.in</p>
               </div>
 
-              <div className="col-md-3">
-                <div className="social-media">
-                  <h6 className="fw-bold text-white">SOCIAL MEDIA</h6>
-                  <img src="./assets/socialmedia.png" />
-                </div>
+              <div className=" md:text-white text-slate-800 space-y-2">
+                <h6 className="font-bold text-xl">TOUR PACKAGE</h6>
+                <p>One day Package</p>
+                <p>Two day Package</p>
+                <p>Three day Package</p>
+                <p>Four day Package</p>
+                <p>Five day Package</p>
+                <p>Six day Package</p>
+                <p>Seven day Package</p>
+                <p>Eight day Package</p>
+                <p>Nine day Package</p>
+                <p>Ten day Package</p>
               </div>
-              <hr className="text-white" />
-              <p className="text-center text-white">
-                All right reserved manoj tours and travels
-              </p>
+
+              <div className="md:text-white text-slate-800 space-y-2">
+                <h6 className="font-bold text-xl">OTHER SERVICES</h6>
+                <p>Hire for Tour Package</p>
+                <p>Hire for Outstation</p>
+                <p>Hire for One Way Drop</p>
+                <p>Hire for Round Trip</p>
+                <p>Hire for Corporate Companies</p>
+                <p>Hire for Airport Pickup & Drop</p>
+                <p>Hire for Local</p>
+                <p>Hire for Pilgrimage</p>
+              </div>
+
+              <div className="md:text-white text-slate-800 space-y-2">
+                <h6 className="font-bold text-xl">SOCIAL MEDIA</h6>
+                <img src={Socialmedia} />
+              </div>
             </div>
+            <hr className="md:text-white text-slate-800" />
+            <p className="text-center md:text-white text-slate-800 md:mt-12">
+              All right reserved manoj tours and travels
+            </p>
           </div>
         </div>
       </div>
