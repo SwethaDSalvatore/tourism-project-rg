@@ -174,7 +174,7 @@ const Home = () => {
           </h1>
         </div>
         <div className="md:grid md:grid-cols-4 mt-7">
-          <div className="block bg-cyan-200 text-black transition duration-500 ease-in-out transform hover:shadow-lg hover:-translate-y-2 ">
+          <div className="block bg-cyan-200 text-black transition duration-500 ease-in-out transform hover:shadow-lg hover:-translate-y-2 h-[413px] w-[375px]">
             <div className=" p-6 text-center">
               <div className="flex items-center justify-center mb-3">
                 <div className="p-4 bg-white rounded-full ">
@@ -276,7 +276,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="block bg-teal-500 text-black transition duration-500 ease-in-out transform hover:shadow-lg hover:-translate-y-2 text-center">
+          <div className="block bg-teal-500 text-black transition duration-500 ease-in-out transform hover:shadow-lg hover:-translate-y-2 text-center h-[413px] w-[375px]">
             <div className="p-6">
               <div className="flex items-center justify-center mb-3">
                 <div className="p-4 bg-white rounded-full ">
