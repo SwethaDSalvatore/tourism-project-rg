@@ -105,7 +105,7 @@ const Home = () => {
               </svg>
               <input
                 className="bg-slate-100 outline-none"
-                type="text"
+                type="number"
                 id="mobile"
                 placeholder="Mobile"
                 required
@@ -125,7 +125,7 @@ const Home = () => {
               </svg>
               <input
                 className="bg-slate-100 outline-none"
-                type="text"
+                type="number"
                 id="members"
                 placeholder="No of Passengers"
                 required
@@ -912,11 +912,12 @@ const Home = () => {
                     type="number"
                     className="px-6 py-4 rounded-lg bg-white shadow-2xl border border-slate-400"
                     placeholder="Enter mobile number"
+                    required
                   />
                 </div>
                 <div className=" mt-3 text-center">
                   <button
-                    type="button"
+                    type="submit"
                     className="px-6 py-4 rounded-lg bg-blue-500 hover:bg-blue-600 md:text-white text-slate-800"
                   >
                     Request call back
