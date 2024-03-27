@@ -205,7 +205,7 @@ const Home = () => {
             </div>
           </div>
           <div className="relative">
-            <div className="block text-black transition duration-500 ease-in-out transform hover:shadow-lg hover:-translate-y-2 text-center">
+            <div className="block text-black transition duration-500 ease-in-out transform hover:shadow-lg hover:-translate-y-2 text-center h-[413px] w-[375px]">
               <img
                 className="h-[413px] w-[375px]  max-w-full opacity-50 "
                 src={Hills}
@@ -241,7 +241,7 @@ const Home = () => {
             </div>
           </div>
           <div className="relative">
-            <div className="block text-black transition duration-500 ease-in-out transform hover:shadow-lg hover:-translate-y-2 text-center">
+            <div className="block text-black transition duration-500 ease-in-out transform hover:shadow-lg hover:-translate-y-2 text-center h-[413px] w-[375px]">
               <img
                 className="h-[413px] w-[375px] max-w-full opacity-50 "
                 src={Traveler}
@@ -738,7 +738,7 @@ const Home = () => {
                 onClick={toggleCollapse1}
                 aria-expanded={isOpen1 ? "true" : "false"}
               >
-                <span>Why are we the best cab service in Coimbatore?</span>
+                <span className="text-start">Why are we the best cab service in Coimbatore?</span>
                 <svg
                   className={`w-3 h-3 rotate-${isOpen1 ? "0" : "180"} shrink-0`}
                   aria-hidden="true"
