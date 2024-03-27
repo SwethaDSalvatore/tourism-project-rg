@@ -45,13 +45,13 @@ const Home = () => {
   return (
     <div>
       {/* header */}
-      <div className="bg-slate-950 text-white flex justify-between p-5 ">
-        <ul className="flex space-x-10">
-          <li>+91 9865089000</li>
-          <li>info@manojtravels.in</li>
+      <div className="bg-slate-950 text-white md:flex md:justify-between px-5 py-2 ">
+        <ul className="flex justify-between md:space-x-10 text-sm md:text-base">
+          <li className="cursor-pointer">+91 9865089000</li>
+          <li className="cursor-pointer">info@manojtravels.in</li>
         </ul>
-        <ul>
-          <li>Coimbatore</li>
+        <ul className="text-sm md:text-base">
+          <li className="cursor-pointer">Coimbatore</li>
         </ul>
       </div>
 
@@ -59,18 +59,18 @@ const Home = () => {
       <Navbar />
 
       {/* trip details */}
-      <div>
+      <div className="md:relative">
         <img
           className="h-auto max-w-full"
           src={Banner}
           alt="image description"
         />
-        <form className=" md:ml-16 md:mr-16 mb-12 p-7 rounded-xl shadow-xl shadow-slate-400">
-          <h5 className="text-center fw-bold mb-3 font-bold text-xl">
+        <form className="md:absolute md:bottom-0 md:left-60 md:ml-16 md:mr-16 mb-12 p-7 rounded-xl shadow-xl bg-white shadow-slate-400">
+          <h5 className="text-center fw-bold mb-3 font-bold text-xl text-slate-800">
             TRIP DETAILS
           </h5>
           <div className="grid gap-6 mb-6 md:grid-cols-3">
-            <div className="bg-slate-100 border border-gray-300 text-gray-900 text-sm  focus:ring-blue-500 focus:border-blue-500 w-full p-2.5 flex items-center space-x-6">
+            <div className="rounded-lg bg-slate-100 border border-gray-300 text-slate-800 text-sm  focus:ring-blue-500 focus:border-blue-500 w-full p-2.5 flex items-center space-x-6">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="1em"
@@ -83,14 +83,14 @@ const Home = () => {
                 ></path>
               </svg>
               <input
-                className="bg-slate-100"
+                className="bg-slate-100 outline-none"
                 type="text"
                 id="name"
                 placeholder="Your Name"
                 required
               />
             </div>
-            <div className="bg-slate-100 border border-gray-300 text-gray-900 text-sm  focus:ring-blue-500 focus:border-blue-500 w-full p-2.5 flex items-center space-x-6">
+            <div className="rounded-lg bg-slate-100 border border-gray-300 text-slate-800 text-sm  focus:ring-blue-500 focus:border-blue-500 w-full p-2.5 flex items-center space-x-6">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="1em"
@@ -103,14 +103,14 @@ const Home = () => {
                 ></path>
               </svg>
               <input
-                className="bg-slate-100"
+                className="bg-slate-100 outline-none"
                 type="text"
                 id="mobile"
                 placeholder="Mobile"
                 required
               />
             </div>
-            <div className="bg-slate-100 border border-gray-300 text-gray-900 text-sm  focus:ring-blue-500 focus:border-blue-500 w-full p-2.5 flex items-center space-x-6">
+            <div className="rounded-lg bg-slate-100 border border-gray-300 text-slate-800 text-sm  focus:ring-blue-500 focus:border-blue-500 w-full p-2.5 flex items-center space-x-6">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="1em"
@@ -123,7 +123,7 @@ const Home = () => {
                 ></path>
               </svg>
               <input
-                className="bg-slate-100"
+                className="bg-slate-100 outline-none"
                 type="text"
                 id="members"
                 placeholder="No of Passengers"
@@ -131,12 +131,14 @@ const Home = () => {
               />
             </div>
           </div>
-          <button
-            type="submit"
-            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-xl text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          >
-            Book Now
-          </button>
+          <div className="flex items-center justify-center">
+            <button
+              type="submit"
+              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-xl text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              Book Now
+            </button>
+          </div>
         </form>
       </div>
 
@@ -145,17 +147,16 @@ const Home = () => {
       <div className="md:relative">
         <div className="md:absolute md:top-0 md:left-0 w-full">
           <div className="p-7">
-            <h1 className="md:text-8xl text-4xl text-center p-4 font-thin">
+            <h1 className="md:text-8xl text-4xl text-center p-4 font-thin text-slate-800">
               About Us
             </h1>
-            <p className="text-center md:text-xl">
+            <p className="text-center md:text-xl text-slate-500 pt-7">
               Welcome to Manoj Tours and Travels. If you are looking for a call
-              taxi in Coimbatore, look no further
-              <br /> than Manoj Travels. As a trusted car rental in Coimbatore,
-              we understand that planning a trip can be
-              <br /> a daunting task. That’s why we offer a range of travel
-              packages that are designed to take the stress
-              <br /> out of travel planning.
+              taxi in Coimbatore, look no further than Manoj Travels. As a
+              trusted car rental in Coimbatore, we understand that planning a
+              trip can be a daunting task. That’s why we offer a range of travel
+              packages that are designed to take the stress out of travel
+              planning.
             </p>
           </div>
         </div>
@@ -163,82 +164,118 @@ const Home = () => {
       </div>
 
       {/* booking card */}
-      <div className="mt-12 mb-12">
-        <h1 className="text-4xl font-thin text-center">
-          BOOK TEMPO TRAVELLER IN{" "}
-          <span className="font-normal">COIMBATORE</span>
-        </h1>
-        <h1 className="text-4xl font-thin text-center">
-          with
-          <span className="font-normal"> manoj tours and travels</span>
-        </h1>
+      <div className="mt-12 mb-12 text-slate-800">
+        <div className="m-12">
+          <h1 className="md:text-4xl text-xl font-thin text-center">
+            BOOK TEMPO TRAVELLER IN{" "}
+            <span className="font-normal">COIMBATORE</span> with
+            <span className="font-normal"> manoj tours and travels</span>
+          </h1>
+        </div>
         <div className="md:grid md:grid-cols-4 mt-7">
           <div className="block bg-cyan-200 text-black transition duration-500 ease-in-out transform hover:shadow-lg hover:-translate-y-2 ">
-            <div className="absolute top-0 p-6">
-              <div className="pt-2 pb-2">
-                <svg
-                  className="fill-current w-10 h-10"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="1em"
-                  height="1em"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M2 2h20v8h-2V4H4v9.586l5-5l5.914 5.914l-1.414 1.414l-4.5-4.5l-5 5V20h6v2H2zm13.547 5a1 1 0 1 0 0 2a1 1 0 0 0 0-2m-3 1a3 3 0 1 1 6 0a3 3 0 0 1-6 0m7.24 4.086l4.127 4.127l-7.286 7.287H12.5l-.001-4.128zm-.922 3.75l1.299 1.3l.922-.923l-1.3-1.299zm-.115 2.713l-1.3-1.299l-2.95 2.95v1.3h1.3z"
-                  ></path>
-                </svg>
+            <div className=" p-6 text-center">
+              <div className="flex items-center justify-center mb-3">
+                <div className="p-4 bg-white rounded-full ">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M6.4 20q-1 0-1.7-.7T4 17.6v-1.175q0-.95.688-1.763q.687-.812 1.812-1.4q1.125-.587 2.538-.925Q10.45 12 11.9 12q1.45 0 2.9.337q1.45.338 2.6.938q1.15.6 1.875 1.413Q20 15.5 20 16.45v1.15q0 1-.7 1.7t-1.7.7Zm5.5-9q-1.45 0-2.475-1.025Q8.4 8.95 8.4 7.5q0-1.45 1.025-2.475Q10.45 4 11.9 4q1.475 0 2.487 1.025Q15.4 6.05 15.4 7.5q0 1.45-1.025 2.475Q13.35 11 11.9 11Z"
+                    ></path>
+                  </svg>
+                </div>
               </div>
               <div className="space-y-4">
-                <h4 className=" text-xl font-semibold">UI/UX designer</h4>
+                <h4 className=" text-xl font-semibold">
+                  High-Quality Travellers & Drivers
+                </h4>
                 <p>
-                  As a UI/UX designer, my goal is to deliver immersive and
-                  engaging experiences that leave a lasting impact on users
-                  while meeting the unique needs of each project.
+                  We only onboard tempo travellers that pass conclusive quality
+                  checks. We also ensure that all our drivers arebackground
+                  verified, have extensive driving experience & are adequately
+                  groomed.
                 </p>
               </div>
             </div>
           </div>
           <div className="relative">
-            <div className="block text-black transition duration-500 ease-in-out transform hover:shadow-lg hover:-translate-y-2 ">
-              <img className="h-[413px] w-[375px]" src={Hills} alt="" />
+            <div className="block text-black transition duration-500 ease-in-out transform hover:shadow-lg hover:-translate-y-2 text-center">
+              <img className="h-[413px] w-[375px] max-w-full opacity-50 " src={Hills} alt="" />
               <div className="absolute top-0 p-6">
-                <div className="pt-2 pb-2">
-                  <svg
-                    className="fill-current w-10 h-10"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="1em"
-                    height="1em"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M2 2h20v8h-2V4H4v9.586l5-5l5.914 5.914l-1.414 1.414l-4.5-4.5l-5 5V20h6v2H2zm13.547 5a1 1 0 1 0 0 2a1 1 0 0 0 0-2m-3 1a3 3 0 1 1 6 0a3 3 0 0 1-6 0m7.24 4.086l4.127 4.127l-7.286 7.287H12.5l-.001-4.128zm-.922 3.75l1.299 1.3l.922-.923l-1.3-1.299zm-.115 2.713l-1.3-1.299l-2.95 2.95v1.3h1.3z"
-                    ></path>
-                  </svg>
+                <div className="flex items-center justify-center mb-3">
+                  <div className="p-4 bg-white rounded-full ">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M6.4 20q-1 0-1.7-.7T4 17.6v-1.175q0-.95.688-1.763q.687-.812 1.812-1.4q1.125-.587 2.538-.925Q10.45 12 11.9 12q1.45 0 2.9.337q1.45.338 2.6.938q1.15.6 1.875 1.413Q20 15.5 20 16.45v1.15q0 1-.7 1.7t-1.7.7Zm5.5-9q-1.45 0-2.475-1.025Q8.4 8.95 8.4 7.5q0-1.45 1.025-2.475Q10.45 4 11.9 4q1.475 0 2.487 1.025Q15.4 6.05 15.4 7.5q0 1.45-1.025 2.475Q13.35 11 11.9 11Z"
+                      ></path>
+                    </svg>
+                  </div>
                 </div>
                 <div className="space-y-4">
-                  <h4 className=" text-xl font-semibold">UI/UX designer</h4>
+                  <h4 className=" text-xl font-semibold">
+                    100% Transparent Pricing
+                  </h4>
                   <p>
-                    As a UI/UX designer, my goal is to deliver immersive and
-                    engaging experiences that leave a lasting impact on users
-                    while meeting the unique needs of each project.
+                    We have a completely transparent pricing policy, where we
+                    disclose all possible costs that you’ll have to take into
+                    account for your transportation budget.
                   </p>
                 </div>
               </div>
             </div>
           </div>
           <div className="relative">
-            <div className="block text-black transition duration-500 ease-in-out transform hover:shadow-lg hover:-translate-y-2 ">
+            <div className="block text-black transition duration-500 ease-in-out transform hover:shadow-lg hover:-translate-y-2 text-center">
               <img
-                className="h-[413px] w-[375px] max-w-full"
+                className="h-[413px] w-[375px] max-w-full opacity-50 "
                 src={Traveler}
-                alt=""
+                alt="travel-pic"
               />
               <div className="absolute top-0 p-6">
-                <div className="pt-2 pb-2">
+                <div className="flex items-center justify-center mb-3">
+                  <div className="p-4 bg-white rounded-full ">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M6.4 20q-1 0-1.7-.7T4 17.6v-1.175q0-.95.688-1.763q.687-.812 1.812-1.4q1.125-.587 2.538-.925Q10.45 12 11.9 12q1.45 0 2.9.337q1.45.338 2.6.938q1.15.6 1.875 1.413Q20 15.5 20 16.45v1.15q0 1-.7 1.7t-1.7.7Zm5.5-9q-1.45 0-2.475-1.025Q8.4 8.95 8.4 7.5q0-1.45 1.025-2.475Q10.45 4 11.9 4q1.475 0 2.487 1.025Q15.4 6.05 15.4 7.5q0 1.45-1.025 2.475Q13.35 11 11.9 11Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div className="space-y-4">
+                  <h4 className=" text-xl font-semibold">
+                    Safe and sanitized Travelling Experience
+                  </h4>
+                  <p>
+                    We ensure that your tempo traveller is completely cleaned &
+                    sanitized before & after your trip. You can relax & enjoy
+                    while renting your tempo traveller.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="block bg-teal-500 text-black transition duration-500 ease-in-out transform hover:shadow-lg hover:-translate-y-2 text-center">
+            <div className="p-6">
+              <div className="flex items-center justify-center mb-3">
+                <div className="p-4 bg-white rounded-full ">
                   <svg
-                    className="fill-current w-10 h-10"
                     xmlns="http://www.w3.org/2000/svg"
                     width="1em"
                     height="1em"
@@ -246,43 +283,19 @@ const Home = () => {
                   >
                     <path
                       fill="currentColor"
-                      d="M2 2h20v8h-2V4H4v9.586l5-5l5.914 5.914l-1.414 1.414l-4.5-4.5l-5 5V20h6v2H2zm13.547 5a1 1 0 1 0 0 2a1 1 0 0 0 0-2m-3 1a3 3 0 1 1 6 0a3 3 0 0 1-6 0m7.24 4.086l4.127 4.127l-7.286 7.287H12.5l-.001-4.128zm-.922 3.75l1.299 1.3l.922-.923l-1.3-1.299zm-.115 2.713l-1.3-1.299l-2.95 2.95v1.3h1.3z"
+                      d="M6.4 20q-1 0-1.7-.7T4 17.6v-1.175q0-.95.688-1.763q.687-.812 1.812-1.4q1.125-.587 2.538-.925Q10.45 12 11.9 12q1.45 0 2.9.337q1.45.338 2.6.938q1.15.6 1.875 1.413Q20 15.5 20 16.45v1.15q0 1-.7 1.7t-1.7.7Zm5.5-9q-1.45 0-2.475-1.025Q8.4 8.95 8.4 7.5q0-1.45 1.025-2.475Q10.45 4 11.9 4q1.475 0 2.487 1.025Q15.4 6.05 15.4 7.5q0 1.45-1.025 2.475Q13.35 11 11.9 11Z"
                     ></path>
                   </svg>
                 </div>
-                <div className="space-y-4">
-                  <h4 className=" text-xl font-semibold">UI/UX designer</h4>
-                  <p>
-                    As a UI/UX designer, my goal is to deliver immersive and
-                    engaging experiences that leave a lasting impact on users
-                    while meeting the unique needs of each project.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="block bg-teal-500 text-black transition duration-500 ease-in-out transform hover:shadow-lg hover:-translate-y-2 ">
-            <div className="absolute top-0 p-6">
-              <div className="pt-2 pb-2">
-                <svg
-                  className="fill-current w-10 h-10"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="1em"
-                  height="1em"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M2 2h20v8h-2V4H4v9.586l5-5l5.914 5.914l-1.414 1.414l-4.5-4.5l-5 5V20h6v2H2zm13.547 5a1 1 0 1 0 0 2a1 1 0 0 0 0-2m-3 1a3 3 0 1 1 6 0a3 3 0 0 1-6 0m7.24 4.086l4.127 4.127l-7.286 7.287H12.5l-.001-4.128zm-.922 3.75l1.299 1.3l.922-.923l-1.3-1.299zm-.115 2.713l-1.3-1.299l-2.95 2.95v1.3h1.3z"
-                  ></path>
-                </svg>
               </div>
               <div className="space-y-4">
-                <h4 className=" text-xl font-semibold">UI/UX designer</h4>
+                <h4 className=" text-xl font-semibold">
+                  24/7 Customer Support
+                </h4>
                 <p>
-                  As a UI/UX designer, my goal is to deliver immersive and
-                  engaging experiences that leave a lasting impact on users
-                  while meeting the unique needs of each project.
+                  24/7 customer support & your own dedicated travel manager to
+                  help you with every step in availing a tempo traveller for
+                  rent.
                 </p>
               </div>
             </div>
@@ -474,7 +487,7 @@ const Home = () => {
               src={David}
               alt="person-1"
             />
-            <h5 className="mb-1 text-xl font-medium text-gray-900 ">
+            <h5 className="mb-1 text-xl font-medium text-slate-800 ">
               David hall
             </h5>
             <p>
@@ -536,7 +549,7 @@ const Home = () => {
               src={Prince}
               alt="person-1"
             />
-            <h5 className="mb-1 text-xl font-medium text-gray-900 ">
+            <h5 className="mb-1 text-xl font-medium text-slate-800 ">
               David hall
             </h5>
             <p>
@@ -598,7 +611,7 @@ const Home = () => {
               src={Streve}
               alt="person-1"
             />
-            <h5 className="mb-1 text-xl font-medium text-gray-900 ">
+            <h5 className="mb-1 text-xl font-medium text-slate-800 ">
               David hall
             </h5>
             <p>
@@ -949,7 +962,7 @@ const Home = () => {
                 </div>
               </div>
               <hr className="text-white" />
-              <p class="text-center text-white">
+              <p className="text-center text-white">
                 All right reserved manoj tours and travels
               </p>
             </div>
