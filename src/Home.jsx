@@ -46,7 +46,7 @@ const Home = () => {
   return (
     <div>
       {/* header */}
-      <div className="bg-slate-950 text-white md:flex md:justify-between px-5 py-2 ">
+      <div className="hidden md:block bg-slate-950 text-white px-5 py-2 ">
         <ul className="flex justify-between md:space-x-10 text-sm md:text-base">
           <li className="cursor-pointer">+91 9865089000</li>
           <li className="cursor-pointer">info@manojtravels.in</li>
@@ -207,7 +207,7 @@ const Home = () => {
           <div className="relative">
             <div className="block text-black transition duration-500 ease-in-out transform hover:shadow-lg hover:-translate-y-2 text-center">
               <img
-                className="h-[413px]  max-w-full opacity-50 "
+                className="h-[413px] w-[375px]  max-w-full opacity-50 "
                 src={Hills}
                 alt=""
               />
@@ -311,42 +311,42 @@ const Home = () => {
         <img className="h-auto max-w-full" src={Coach} alt="van-pic" />
         <div className="md:absolute md:bottom-20 md:left-0 w-full flex items-end justify-end md:pr-10">
           <div className="flex flex-col max-w-xl">
-            <div className="m-4 p-4 bg-gradient-to-br from-yellow-400 to-yellow-800 rounded-r-xl rounded-b-xl ">
-              <h5>Rental Cars</h5>
+            <div className="m-4 p-4 bg-gradient-to-br from-yellow-400 to-yellow-800 rounded-r-xl rounded-b-xl text-white">
+              <h5 className="font-bold">Rental Cars</h5>
               <p>
                 Rent luxury cars for a premium experience, tailored to
                 youdesires.
               </p>
             </div>
-            <div className="m-4 p-4 bg-gradient-to-br from-green-400 to-green-800 rounded-r-xl rounded-b-xl">
-              <h5>Friendly Price</h5>
+            <div className="m-4 p-4 bg-gradient-to-br from-green-400 to-green-800 rounded-r-xl rounded-b-xl text-white">
+              <h5 className="font-bold">Friendly Price</h5>
               <p>
                 High-quality rentals at an affordable rate for your ultimate
                 convenience.
               </p>
             </div>
-            <div className="m-4 p-4 bg-gradient-to-br from-cyan-400 to-blue-900 rounded-r-xl rounded-b-xl">
-              <h5>Luxury Tempo Traveller</h5>
+            <div className="m-4 p-4 bg-gradient-to-br from-cyan-400 to-blue-900 rounded-r-xl rounded-b-xl text-white">
+              <h5 className="font-bold">Luxury Tempo Traveller</h5>
               <p>
                 Experience luxury travel with our premium Tempo Traveller rental
                 service.
               </p>
             </div>
-            <div className=" m-4 p-4 bg-gradient-to-br from-purple-600 to-indigo-900 rounded-r-xl rounded-b-xl">
-              <h5>Customer Safty</h5>
+            <div className=" m-4 p-4 bg-gradient-to-br from-purple-600 to-indigo-900 rounded-r-xl rounded-b-xl text-white">
+              <h5 className="font-bold">Customer Safty</h5>
               <p>
                 Ensuring your safety is our top priority in every car rental.
               </p>
             </div>
-            <div className=" m-4 p-4 bg-gradient-to-br from-red-600 to-pink-300 rounded-r-xl rounded-b-xl">
-              <h5>Tour Guide</h5>
+            <div className=" m-4 p-4 bg-gradient-to-br from-red-600 to-pink-300 rounded-r-xl rounded-b-xl text-white">
+              <h5 className="font-bold">Tour Guide</h5>
               <p>
                 Explore with ease: our expert tour guide accompanies your car
                 service.
               </p>
             </div>
-            <div className="m-4 p-4 bg-gradient-to-br from-gray-600 to-gray-900 rounded-r-xl rounded-b-xl">
-              <h5>Instant Booking</h5>
+            <div className="m-4 p-4 bg-gradient-to-br from-gray-600 to-gray-900 rounded-r-xl rounded-b-xl text-white">
+              <h5 className="font-bold">Instant Booking</h5>
               <p>
                 Book instantly and enjoy the convenience of our efficient car
                 rentals.
@@ -363,23 +363,23 @@ const Home = () => {
           Available Vehicles At{" "}
           <span className="font-normal">Manoj Travels</span>
         </h1>
-        <div className="m-7 grid grid-cols-4 gap-7">
-          <button className="md:px-4 md:py-6 bg-blue-500 rounded-xl font-semibold md:text-xl ">
+        <div className="m-7 grid md:grid-cols-4 grid-col-1 md:gap-7 gap-2">
+          <button className="md:px-4 md:py-6 px-4 py-2 bg-blue-500 rounded-xl font-semibold md:text-xl cursor-pointer">
             5 seaters
           </button>
-          <button className="md:px-4 md:py-6 hover:bg-blue-500 rounded-xl font-semibold md:text-xl">
+          <button className="md:px-4 md:py-6 px-4 py-2  bg-white hover:bg-blue-500 rounded-xl font-semibold md:text-xl cursor-pointer">
             7 seaters
           </button>
-          <button className="md:px-4 md:py-6 hover:bg-blue-500 rounded-xl font-semibold md:text-xl">
+          <button className="md:px-4 md:py-6 px-4 py-2 bg-white hover:bg-blue-500 rounded-xl font-semibold md:text-xl cursor-pointer">
             30 seaters
           </button>
-          <button className="md:px-4 md:py-6 hover:bg-blue-500 rounded-xl font-semibold md:text-xl">
+          <button className="md:px-4 md:py-6 px-4 py-2 bg-white hover:bg-blue-500 rounded-xl font-semibold md:text-xl cursor-pointer">
             Luxury 15 Seaters
           </button>
         </div>
       </div>
       {/* swift */}
-      <div className="flex items-center justify-center space-x-5 md:p-0 p-4">
+      <div className="md:flex items-center justify-center space-x-5 md:p-0 p-4">
         <div className="">
           <div className="max-w-md">
             <img className="" src={swift} alt="" />
@@ -729,12 +729,12 @@ const Home = () => {
         <h1 className="md:text-4xl text-xl font-normal text-center pb-7">
           Frequently <span className="font-thin">Asked Questions</span>
         </h1>
-        <div className="flex flex-col space-y-6 justify-center md:ml-16 md:mr-16">
+        <div className="flex flex-col justify-center md:ml-16 md:mr-16">
           <div>
             <h2>
               <button
                 type="button"
-                className="flex items-center justify-between w-full p-5 font-medium rtl:text-right border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200"
+                className="flex items-center justify-between w-full p-5 font-medium rtl:text-right border border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200"
                 onClick={toggleCollapse1}
                 aria-expanded={isOpen1 ? "true" : "false"}
               >
@@ -775,7 +775,7 @@ const Home = () => {
             <h2>
               <button
                 type="button"
-                className="flex items-center justify-between w-full p-5 font-medium rtl:text-right border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200"
+                className="flex items-center justify-between w-full p-5 font-medium rtl:text-right border border-b border-gray-200 focus:ring-4 focus:ring-gray-200"
                 onClick={toggleCollapse2}
                 aria-expanded={isOpen2 ? "true" : "false"}
               >
@@ -816,7 +816,7 @@ const Home = () => {
             <h2>
               <button
                 type="button"
-                className="flex items-center justify-between w-full p-5 font-medium rtl:text-right border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200"
+                className="flex items-center justify-between w-full p-5 font-medium rtl:text-right border border-b border-gray-200  focus:ring-4 focus:ring-gray-200"
                 onClick={toggleCollapse3}
                 aria-expanded={isOpen3 ? "true" : "false"}
               >
@@ -857,7 +857,7 @@ const Home = () => {
             <h2>
               <button
                 type="button"
-                className="flex items-center justify-between w-full p-5 font-medium rtl:text-right border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200"
+                className="flex items-center justify-between w-full p-5 font-medium rtl:text-right border border-b border-gray-200 rounded-b-xl focus:ring-4 focus:ring-gray-200"
                 onClick={toggleCollapse4}
                 aria-expanded={isOpen4 ? "true" : "false"}
               >
