@@ -21,8 +21,15 @@ import TUV from "./assets/TUV.png";
 import cripumps from "./assets/CRIPUMPS.png";
 import FooterImg from "./assets/footer.jpg";
 import Socialmedia from "./assets/socialmedia.png";
+import logo from "./assets/logo.png";
 
 const Home = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   const [isOpen1, setIsOpen1] = useState(false);
   const [isOpen2, setIsOpen2] = useState(false);
   const [isOpen3, setIsOpen3] = useState(false);
@@ -66,6 +73,99 @@ const Home = () => {
           src={Banner}
           alt="image description"
         />
+
+        <nav className=" border-gray-200 text-white absolute top-0 left-0 w-full ">
+          <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a
+              href="https://flowbite.com/"
+              className="flex items-center space-x-3 rtl:space-x-reverse"
+            >
+              <img src={logo} alt="" className="w-48"/>
+            </a>
+            <button
+              onClick={toggleMenu}
+              type="button"
+              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+              aria-expanded={isMenuOpen ? "true" : "false"}
+            >
+              <span className="sr-only">Open main menu</span>
+              <svg
+                className="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+            <div
+              className={`${
+                isMenuOpen ? "block" : "hidden"
+              } w-full md:block md:w-auto`}
+              id="navbar-default"
+            >
+              <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ">
+                <li>
+                  <a
+                    href="#"
+                    className="block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 text-white"
+                    aria-current="page"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 "
+                  >
+                    Travel Package
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 "
+                  >
+                    Vehicles
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 "
+                  >
+                    Blogs
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 "
+                  >
+                    Contact Us
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 "
+                  >
+                    Login
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
         <form className="md:absolute md:bottom-0 md:left-60 md:ml-16 md:mr-16 mb-12 p-7 rounded-xl shadow-xl bg-white shadow-slate-400">
           <h5 className="text-center fw-bold mb-3 font-bold text-xl text-slate-800">
             TRIP DETAILS
@@ -174,8 +274,8 @@ const Home = () => {
           </h1>
         </div>
         <div className="md:grid md:grid-cols-4 mt-7">
-          <div className="block bg-cyan-200 text-black transition duration-500 ease-in-out transform hover:shadow-lg hover:-translate-y-2 [413px] w-[375px]">
-            <div className=" p-6 text-center [413px] w-[375px] bg-cyan-200">
+          <div className="block bg-cyan-200 text-black transition duration-500 ease-in-out transform hover:shadow-lg hover:-translate-y-2 h-[413px] ">
+            <div className=" p-6 text-center">
               <div className="flex items-center justify-center mb-3">
                 <div className="p-4 bg-white rounded-full ">
                   <svg
@@ -205,7 +305,7 @@ const Home = () => {
             </div>
           </div>
           <div className="relative">
-            <div className="block text-black transition duration-500 ease-in-out transform hover:shadow-lg hover:-translate-y-2 text-center h-[413px] w-[375px]">
+            <div className="block text-black transition duration-500 ease-in-out transform hover:shadow-lg hover:-translate-y-2 text-center">
               <img
                 className="h-[413px] w-[375px]  max-w-full opacity-50 "
                 src={Hills}
@@ -241,7 +341,7 @@ const Home = () => {
             </div>
           </div>
           <div className="relative">
-            <div className="block text-black transition duration-500 ease-in-out transform hover:shadow-lg hover:-translate-y-2 text-center h-[413px] w-[375px]">
+            <div className="block text-black transition duration-500 ease-in-out transform hover:shadow-lg hover:-translate-y-2 text-center">
               <img
                 className="h-[413px] w-[375px] max-w-full opacity-50 "
                 src={Traveler}
@@ -276,9 +376,9 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="block text-black transition duration-500 ease-in-out transform hover:shadow-lg hover:-translate-y-2 text-center [413px] w-[375px] ">
+          <div className="block bg-teal-500 text-black transition duration-500 ease-in-out transform hover:shadow-lg hover:-translate-y-2 text-center h-[413px]">
             <div className="p-6">
-              <div className="flex items-center justify-center mb-3 [413px] w-[375px] bg-teal-500">
+              <div className="flex items-center justify-center mb-3">
                 <div className="p-4 bg-white rounded-full ">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -738,7 +838,9 @@ const Home = () => {
                 onClick={toggleCollapse1}
                 aria-expanded={isOpen1 ? "true" : "false"}
               >
-                <span className="text-start">Why are we the best cab service in Coimbatore?</span>
+                <span className="text-start">
+                  Why are we the best cab service in Coimbatore?
+                </span>
                 <svg
                   className={`w-3 h-3 rotate-${isOpen1 ? "0" : "180"} shrink-0`}
                   aria-hidden="true"
