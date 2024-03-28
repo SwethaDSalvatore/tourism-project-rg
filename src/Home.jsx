@@ -53,14 +53,16 @@ const Home = () => {
   return (
     <div>
       {/* header */}
-      <div className="hidden md:block bg-slate-950 text-white px-5 py-2 ">
-        <ul className="flex justify-between md:space-x-10 text-sm md:text-base">
-          <li className="cursor-pointer">+91 9865089000</li>
-          <li className="cursor-pointer">info@manojtravels.in</li>
-        </ul>
-        <ul className="text-sm md:text-base">
-          <li className="cursor-pointer">Coimbatore</li>
-        </ul>
+      <div className="hidden md:block ">
+        <div className="bg-slate-950 text-white px-5 py-2 flex justify-between">
+          <ul className="flex  md:space-x-10 text-sm md:text-base">
+            <li className="cursor-pointer">+91 9865089000</li>
+            <li className="cursor-pointer">info@manojtravels.in</li>
+          </ul>
+          <ul className="text-sm md:text-base">
+            <li className="cursor-pointer">Coimbatore</li>
+          </ul>
+        </div>
       </div>
 
       {/* Navbar */}
@@ -74,97 +76,100 @@ const Home = () => {
           alt="image description"
         />
 
-        <nav className=" border-gray-200 text-white absolute top-0 left-0 w-full ">
-          <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a
-              href="https://flowbite.com/"
-              className="flex items-center space-x-3 rtl:space-x-reverse"
-            >
-              <img src={logo} alt="" className="w-48"/>
-            </a>
-            <button
-              onClick={toggleMenu}
-              type="button"
-              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
-              aria-expanded={isMenuOpen ? "true" : "false"}
-            >
-              <span className="sr-only">Open main menu</span>
-              <svg
-                className="w-5 h-5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 17 14"
+        <div className="hidden md:block">
+          <nav className=" border-gray-200 text-white absolute top-0 left-0 w-full ">
+            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+              <a
+                href="https://flowbite.com/"
+                className="flex items-center space-x-3 rtl:space-x-reverse"
               >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M1 1h15M1 7h15M1 13h15"
-                />
-              </svg>
-            </button>
-            <div
-              className={`${
-                isMenuOpen ? "block" : "hidden"
-              } w-full md:block md:w-auto`}
-              id="navbar-default"
-            >
-              <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ">
-                <li>
-                  <a
-                    href="#"
-                    className="block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 text-white"
-                    aria-current="page"
-                  >
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 "
-                  >
-                    Travel Package
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 "
-                  >
-                    Vehicles
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 "
-                  >
-                    Blogs
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 "
-                  >
-                    Contact Us
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 "
-                  >
-                    Login
-                  </a>
-                </li>
-              </ul>
+                {/* <img src={logo} alt="" className="w-48"/> */}
+                <h1 className="text-xl font-bold">Manoj Tours & Travels</h1>
+              </a>
+              <button
+                onClick={toggleMenu}
+                type="button"
+                className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                aria-expanded={isMenuOpen ? "true" : "false"}
+              >
+                <span className="sr-only">Open main menu</span>
+                <svg
+                  className="w-5 h-5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 17 14"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M1 1h15M1 7h15M1 13h15"
+                  />
+                </svg>
+              </button>
+              <div
+                className={`${
+                  isMenuOpen ? "block" : "hidden"
+                } w-full md:block md:w-auto`}
+                id="navbar-default"
+              >
+                <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ">
+                  <li>
+                    <a
+                      href="#"
+                      className="block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 text-white"
+                      aria-current="page"
+                    >
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 "
+                    >
+                      Travel Package
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 "
+                    >
+                      Vehicles
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 "
+                    >
+                      Blogs
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 "
+                    >
+                      Contact Us
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-blue-500 "
+                    >
+                      Login
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-        </nav>
+          </nav>
+        </div>
 
         <form className="md:absolute md:bottom-0 md:left-60 md:ml-16 md:mr-16 mb-12 p-7 rounded-xl shadow-xl bg-white shadow-slate-400">
           <h5 className="text-center fw-bold mb-3 font-bold text-xl text-slate-800">
@@ -265,7 +270,138 @@ const Home = () => {
       </div>
 
       {/* booking card */}
-      <div className="mt-12 mb-12 text-slate-800">
+
+      <div className="mt-12 mb-12 text-slate-800 md:hidden block">
+        <div className="m-12">
+          <h1 className="md:text-4xl text-xl font-thin text-center">
+            BOOK TEMPO TRAVELLER IN{" "}
+            <span className="font-normal">COIMBATORE</span> with
+            <span className="font-normal"> manoj tours and travels</span>
+          </h1>
+        </div>
+        <div className=" mt-7 space-y-2">
+          <div className="block bg-cyan-200 text-black  hover:shadow-lg hover:-translate-y-2 ">
+            <div className=" p-6 text-center">
+              <div className="flex items-center justify-center mb-3">
+                <div className="p-4 bg-white rounded-full ">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M6.4 20q-1 0-1.7-.7T4 17.6v-1.175q0-.95.688-1.763q.687-.812 1.812-1.4q1.125-.587 2.538-.925Q10.45 12 11.9 12q1.45 0 2.9.337q1.45.338 2.6.938q1.15.6 1.875 1.413Q20 15.5 20 16.45v1.15q0 1-.7 1.7t-1.7.7Zm5.5-9q-1.45 0-2.475-1.025Q8.4 8.95 8.4 7.5q0-1.45 1.025-2.475Q10.45 4 11.9 4q1.475 0 2.487 1.025Q15.4 6.05 15.4 7.5q0 1.45-1.025 2.475Q13.35 11 11.9 11Z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div className="space-y-4">
+                <h4 className=" text-xl font-semibold">
+                  High-Quality Travellers & Drivers
+                </h4>
+                <p>
+                  We only onboard tempo travellers that pass conclusive quality
+                  checks. We also ensure that all our drivers arebackground
+                  verified, have extensive driving experience & are adequately
+                  groomed.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="block bg-cyan-300 text-black  hover:shadow-lg hover:-translate-y-2 ">
+            <div className=" p-6 text-center">
+              <div className="flex items-center justify-center mb-3">
+                <div className="p-4 bg-white rounded-full ">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M6.4 20q-1 0-1.7-.7T4 17.6v-1.175q0-.95.688-1.763q.687-.812 1.812-1.4q1.125-.587 2.538-.925Q10.45 12 11.9 12q1.45 0 2.9.337q1.45.338 2.6.938q1.15.6 1.875 1.413Q20 15.5 20 16.45v1.15q0 1-.7 1.7t-1.7.7Zm5.5-9q-1.45 0-2.475-1.025Q8.4 8.95 8.4 7.5q0-1.45 1.025-2.475Q10.45 4 11.9 4q1.475 0 2.487 1.025Q15.4 6.05 15.4 7.5q0 1.45-1.025 2.475Q13.35 11 11.9 11Z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div className="space-y-4">
+                <h4 className=" text-xl font-semibold">
+                  100% Transparent Pricing
+                </h4>
+                <p>
+                  We have a completely transparent pricing policy, where we
+                  disclose all possible costs that you’ll have to take into
+                  account for your transportation budget.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="block bg-cyan-400 text-black  hover:shadow-lg hover:-translate-y-2 ">
+            <div className=" p-6 text-center">
+              <div className="flex items-center justify-center mb-3">
+                <div className="p-4 bg-white rounded-full ">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M6.4 20q-1 0-1.7-.7T4 17.6v-1.175q0-.95.688-1.763q.687-.812 1.812-1.4q1.125-.587 2.538-.925Q10.45 12 11.9 12q1.45 0 2.9.337q1.45.338 2.6.938q1.15.6 1.875 1.413Q20 15.5 20 16.45v1.15q0 1-.7 1.7t-1.7.7Zm5.5-9q-1.45 0-2.475-1.025Q8.4 8.95 8.4 7.5q0-1.45 1.025-2.475Q10.45 4 11.9 4q1.475 0 2.487 1.025Q15.4 6.05 15.4 7.5q0 1.45-1.025 2.475Q13.35 11 11.9 11Z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div className="space-y-4">
+                <h4 className=" text-xl font-semibold">
+                  Safe and sanitized Travelling Experience
+                </h4>
+                <p>
+                  We ensure that your tempo traveller is completely cleaned &
+                  sanitized before & after your trip. You can relax & enjoy
+                  while renting your tempo traveller.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="block bg-cyan-500 text-black hover:shadow-lg hover:-translate-y-2 text-center">
+            <div className="p-6">
+              <div className="flex items-center justify-center mb-3">
+                <div className="p-4 bg-white rounded-full ">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M6.4 20q-1 0-1.7-.7T4 17.6v-1.175q0-.95.688-1.763q.687-.812 1.812-1.4q1.125-.587 2.538-.925Q10.45 12 11.9 12q1.45 0 2.9.337q1.45.338 2.6.938q1.15.6 1.875 1.413Q20 15.5 20 16.45v1.15q0 1-.7 1.7t-1.7.7Zm5.5-9q-1.45 0-2.475-1.025Q8.4 8.95 8.4 7.5q0-1.45 1.025-2.475Q10.45 4 11.9 4q1.475 0 2.487 1.025Q15.4 6.05 15.4 7.5q0 1.45-1.025 2.475Q13.35 11 11.9 11Z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div className="space-y-4">
+                <h4 className=" text-xl font-semibold">
+                  24/7 Customer Support
+                </h4>
+                <p>
+                  24/7 customer support & your own dedicated travel manager to
+                  help you with every step in availing a tempo traveller for
+                  rent.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* destop */}
+      <div className="mt-12 mb-12 text-slate-800 hidden md:block ">
         <div className="m-12">
           <h1 className="md:text-4xl text-xl font-thin text-center">
             BOOK TEMPO TRAVELLER IN{" "}
@@ -407,6 +543,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+
       <div className="md:relative">
         <img className="h-auto max-w-full" src={Coach} alt="van-pic" />
         <div className="md:absolute md:bottom-20 md:left-0 w-full flex items-end justify-end md:pr-10">
