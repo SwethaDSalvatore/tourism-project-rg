@@ -1143,7 +1143,7 @@ const Home = () => {
 
       {/* <!-- footer section --> */}
       <div className="relative">
-        <img className="h-[1404px] w-[320px] max-w-full md:h-auto md:w-auto" src={FooterImg} alt="van-pic" />
+        <img className="h-[1404px] w-full max-w-full md:h-auto md:w-auto" src={FooterImg} alt="van-pic" />
         <div className="absolute top-0 left-0 w-full">
           <div className="">
             <div className="mt-12 mb-12">
