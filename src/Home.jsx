@@ -21,7 +21,7 @@ import TUV from "./assets/TUV.png";
 import cripumps from "./assets/CRIPUMPS.png";
 import FooterImg from "./assets/footer.jpg";
 import Socialmedia from "./assets/socialmedia.png";
-import logo from "./assets/logo.png";
+import Circle from "./assets/Circle.png";
 
 const Home = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -272,7 +272,7 @@ const Home = () => {
       {/* booking card */}
 
       <div className="mt-12 mb-12 text-slate-800 md:hidden block">
-        <div className="m-12">
+        <div className="mt-12 mb-12 pl-4 pr-4">
           <h1 className="md:text-4xl text-xl font-thin text-center">
             BOOK TEMPO TRAVELLER IN{" "}
             <span className="font-normal">COIMBATORE</span> with
@@ -280,7 +280,7 @@ const Home = () => {
           </h1>
         </div>
         <div className=" mt-7 space-y-2">
-          <div className="block bg-cyan-200 text-black  hover:shadow-lg hover:-translate-y-2 ">
+          <div className="block bg-cyan-200 text-black  hover:shadow-lg ">
             <div className=" p-6 text-center">
               <div className="flex items-center justify-center mb-3">
                 <div className="p-4 bg-white rounded-full ">
@@ -310,7 +310,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="block bg-cyan-300 text-black  hover:shadow-lg hover:-translate-y-2 ">
+          <div className="block bg-cyan-300 text-black  hover:shadow-lg ">
             <div className=" p-6 text-center">
               <div className="flex items-center justify-center mb-3">
                 <div className="p-4 bg-white rounded-full ">
@@ -339,7 +339,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="block bg-cyan-400 text-black  hover:shadow-lg hover:-translate-y-2 ">
+          <div className="block bg-cyan-400 text-black  hover:shadow-lg ">
             <div className=" p-6 text-center">
               <div className="flex items-center justify-center mb-3">
                 <div className="p-4 bg-white rounded-full ">
@@ -368,7 +368,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="block bg-cyan-500 text-black hover:shadow-lg hover:-translate-y-2 text-center">
+          <div className="block bg-cyan-500 text-black hover:shadow-lg ">
             <div className="p-6">
               <div className="flex items-center justify-center mb-3">
                 <div className="p-4 bg-white rounded-full ">
@@ -601,30 +601,35 @@ const Home = () => {
           <span className="font-normal">Manoj Travels</span>
         </h1>
         <div className="m-7 grid md:grid-cols-4 grid-col-1 md:gap-7 gap-2">
-          <button className="md:px-4 md:py-6 px-4 py-2 bg-blue-500 rounded-xl font-semibold md:text-xl cursor-pointer">
+          <button className="md:px-4 md:py-6 px-4 py-2 bg-cyan-500 rounded-xl font-semibold md:text-xl cursor-pointer">
             5 seaters
           </button>
-          <button className="md:px-4 md:py-6 px-4 py-2  bg-white hover:bg-blue-500 rounded-xl font-semibold md:text-xl cursor-pointer">
+          <button className="md:px-4 md:py-6 px-4 py-2  bg-white hover:bg-cyan-500 rounded-xl font-semibold md:text-xl cursor-pointer">
             7 seaters
           </button>
-          <button className="md:px-4 md:py-6 px-4 py-2 bg-white hover:bg-blue-500 rounded-xl font-semibold md:text-xl cursor-pointer">
+          <button className="md:px-4 md:py-6 px-4 py-2 bg-white hover:bg-cyan-500 rounded-xl font-semibold md:text-xl cursor-pointer">
             30 seaters
           </button>
-          <button className="md:px-4 md:py-6 px-4 py-2 bg-white hover:bg-blue-500 rounded-xl font-semibold md:text-xl cursor-pointer">
+          <button className="md:px-4 md:py-6 px-4 py-2 bg-white hover:bg-cyan-500 rounded-xl font-semibold md:text-xl cursor-pointer">
             Luxury 15 Seaters
           </button>
         </div>
       </div>
       {/* swift */}
-      <div className="md:flex items-center justify-center space-x-5 md:p-0 p-4">
-        <div className="">
-          <div className="max-w-md">
-            <img className="" src={swift} alt="" />
-          </div>
+      <div className="md:flex items-center justify-center md:space-x-20 md:p-0 p-4 ">
+        <div className="relative max-w-md mx-auto">
+            <img
+              src={Circle}
+              alt=""
+              className=" md:w-[450px] md:h-[450px]"
+            />
+            <div className=" absolute top-0 md:left-40 w-full">
+              <img className="" src={swift} alt="" />
+            </div>
         </div>
-        <div className="max-w-lg">
-          <h1 className="text-4xl font-semibold text-center mb-4">SWIFT</h1>
-          <p className="text-center">
+        <div className="max-w-lg p-4">
+          <h1 className="text-4xl text-center m-4">SWIFT</h1>
+          <p className="text-center md:text-xl text-slate-600">
             Compact, efficient, and ready for every road ahead. With its modern
             design and reliable performance, the Swift is the ultimate travel
             companion. Experience comfort, style, and agility like never before.
@@ -633,7 +638,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="md:mt-12 md:mb-12">
+      <div className="mt-12 mb-12">
         <div className="md:text-4xl text-xl p-4">
           <h1 className=" font-thin text-center">
             BOOK TEMPO TRAVELLER IN{" "}
@@ -724,7 +729,7 @@ const Home = () => {
       </div>
 
       {/* feedback */}
-      <div className="text-slate-800">
+      <div className="text-slate-800 md:mt-12 md:mb-12">
         <h1 className="md:text-4xl  text-xl font-thin text-center">
           What People <span className="font-normal">Say?</span>
         </h1>
@@ -924,7 +929,7 @@ const Home = () => {
           <h1 className="md:text-4xl text-2xl font-thin text-center pb-7">
             Our <span className="font-normal">Clients</span>
           </h1>
-          <p className="text-center text-xl text-slate-600">
+          <p className="text-center md:text-xl text-slate-600">
             Streamline your corporate travel with Manoj Tours & Travels. From
             executive transportation to group outings, we've got you covered.
             Experience seamless service and unmatched convenience for your
@@ -1137,15 +1142,15 @@ const Home = () => {
       </div>
 
       {/* <!-- footer section --> */}
-      <div className="md:relative">
-        <img className="h-auto max-w-full" src={FooterImg} alt="van-pic" />
-        <div className="md:absolute md:top-0 md:left-0 w-full">
-          <div className="row">
+      <div className="relative">
+        <img className="h-[1404px] w-[320px] max-w-full md:h-auto md:w-auto" src={FooterImg} alt="van-pic" />
+        <div className="absolute top-0 left-0 w-full">
+          <div className="">
             <div className="mt-12 mb-12">
-              <h3 className="font-bold text-center md:text-white text-slate-800 mt-5 md:text-4xl text-xl p-4">
+              <h3 className="font-bold text-center md:text-white text-white mt-5 md:text-4xl text-xl p-4">
                 Customer care team will call you in few minutes
               </h3>
-              <form className="footer-form">
+              <form className="">
                 <div className=" text-center">
                   <input
                     type="number"
@@ -1157,16 +1162,16 @@ const Home = () => {
                 <div className=" mt-3 text-center">
                   <button
                     type="submit"
-                    className="px-6 py-4 rounded-lg bg-blue-500 hover:bg-blue-600 md:text-white text-slate-800"
+                    className="px-6 py-4 rounded-lg bg-blue-500 hover:bg-blue-600 text-white"
                   >
                     Request call back
                   </button>
                 </div>
               </form>
             </div>
-            <hr className="md:text-white text-slate-800 mt-5" />
+            <hr className="text-white mt-5" />
             <div className="max-w-6xl mx-auto md:grid md:grid-cols-5 md:gap-7 md:mt-12 md:mb-12 p-5 md:space-y-0 space-y-5">
-              <div className=" md:text-white text-slate-800 space-y-2">
+              <div className=" text-white space-y-2">
                 <h5 className="font-bold text-xl">Manoj Tours & Travels</h5>
                 <p>
                   Kamaraja Road (Opp To) ALOFT HotelNear IOB Bank,Uppliplayam
@@ -1176,7 +1181,7 @@ const Home = () => {
                 <p>info@manojtravels.in</p>
               </div>
 
-              <div className=" md:text-white text-slate-800 space-y-2">
+              <div className=" text-white space-y-2">
                 <h6 className="font-bold text-xl">TOUR PACKAGE</h6>
                 <p>One day Package</p>
                 <p>Two day Package</p>
@@ -1190,7 +1195,7 @@ const Home = () => {
                 <p>Ten day Package</p>
               </div>
 
-              <div className="md:text-white text-slate-800 space-y-2">
+              <div className="text-white space-y-2">
                 <h6 className="font-bold text-xl">OTHER SERVICES</h6>
                 <p>Hire for Tour Package</p>
                 <p>Hire for Outstation</p>
@@ -1202,13 +1207,13 @@ const Home = () => {
                 <p>Hire for Pilgrimage</p>
               </div>
 
-              <div className="md:text-white text-slate-800 space-y-2">
+              <div className="text-white space-y-2">
                 <h6 className="font-bold text-xl">SOCIAL MEDIA</h6>
                 <img src={Socialmedia} />
               </div>
             </div>
-            <hr className="md:text-white text-slate-800" />
-            <p className="text-center md:text-white text-slate-800 md:mt-12">
+            <hr className="text-white" />
+            <p className="text-center text-white md:mt-12">
               All right reserved manoj tours and travels
             </p>
           </div>
